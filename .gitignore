@@ -1,0 +1,50 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# Local feature worktrees
+.worktrees/
+
+# macOS
+.DS_Store
+
+# Compiled output
+*.class
+*.jar
+*.war
+*.ear
+
+# ...but the Gradle wrapper jar must be committed, or ./gradlew cannot bootstrap on a fresh clone
+!gradle/wrapper/gradle-wrapper.jar
+
+# Burp project and state files: hundreds of MB, and they embed proxy history
+*.burp
+*.burpsuite
+
+# Test and tool output. Gradle's test reports record the hostname of the machine
+# that ran them and the absolute path of the Burp jar they launched.
+*.log
+hs_err_pid*.log
+replay_pid*.log
+
+# Local-only config: keep machine paths and any credentials out of the tree
+.env
+.env.*
+local.properties
+gradle.properties
+.claude/
